@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX </title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box{
+            background-color: salmon;
+            border: 20px solid rgb(114, 227, 114);
+            padding: 30px;
+            margin: 40px;
+            height: 50px;
+            width: 1300px;
+           
+        }
+
+        .flexbox-container{
+            display: flex;
+            
+        }
+
+        .flexbox-item{
+            width: 200px;
+            margin: 10px;
+            justify-content: center;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+        }
+        .flexbox-item-1{
+            min-height: 100px;
+            flex-shrink: 0;
+        }
+
+        .flexbox-item-2{
+            min-height: 200px;
+           align-self: center;
+        }
+        
+        .flexbox-item-3{
+            min-height: 300px;
+        }
+        
+
+    </style>
+</head>
+<body>
+<div class="box">VISHAKHA PRAJAPATI</div>
+
+<!--Flex box-->
+<div class="flexbox-container">
+    <div class="flexbox-item flexbox-item-1"> </div>
+    <div class="flexbox-item flexbox-item-2"> </div>
+    <div class="flexbox-item flexbox-item-3"> </div>
+</div>   
+</body>
+</html>

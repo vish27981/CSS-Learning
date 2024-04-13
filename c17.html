@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selector</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font: bold;
+            text-align: center;
+        }
+
+        /*If p is contained by any li which is contained by div */
+        /* div li p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }*/
+
+        /*IF p is rightinside div then this CSS will be applied*/
+       /* div>p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }*/
+
+        /*If p is right after i.e o is the net sibling of div */
+        /*div + p{
+            color: white;
+            background-color: red;
+        }*/
+    </style>
+</head>
+
+<body>
+    <h1>This is more no selecors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another paragraph inside li</p>
+                </li>
+                <li>This will not get affected</li>
+                <p>This is a para inside ul</p>
+
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is an another paragarph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

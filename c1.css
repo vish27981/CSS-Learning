@@ -1,0 +1,5 @@
+p{
+    color:yellowgreen;
+    background-color: hotpink;
+}
+!important is used to gime priority to the first given tag don't override other tag;

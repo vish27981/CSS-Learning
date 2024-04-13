@@ -1,0 +1,159 @@
+/*CSS Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CSS Variables*/
+
+:root {
+    --navbar-height: 59px;
+}
+
+/*Navigation Bar*/
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    top: 0px;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/*Image or logo*/
+#logo {
+    margin: 14px 20px;
+
+}
+
+#logo img {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+
+}
+
+/*Navigation Bar: List Styling*/
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+/*Home Section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 455px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{
+    content: "";
+    background:url('../bg.jpg') no-repeat center center;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 50;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+     padding: 34px;
+     margin: 3px 6px;
+     border-radius: 20px;
+     background:#f2f2f2;
+    border: 2px solid brown;
+}
+
+#services .box img{
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Utility Class*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
